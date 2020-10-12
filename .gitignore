@@ -26,3 +26,6 @@ target/
 
 # System files
 .DS_Store
+
+# Other
+src/main/resources/dbdata.json
