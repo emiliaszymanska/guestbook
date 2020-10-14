@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/entries.js" defer></script>
+    <link rel="stylesheet" href="../styles/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Simple Guestbook</h1>
+        <form id="form">
+            <label for="content-form">Message:</label>
+            <textarea id="content-form" style="resize: none" contenteditable="true" placeholder="Your message"
+                      name="content"></textarea>
+            <label for="author-name-form">Name:</label>
+            <input type="text" id="author-name-form" placeholder="Your name" name="authorName">
+            <button id="submit-button" type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    <div class="entries"></div>
+</body>
+
+</html>
