@@ -54,6 +54,7 @@ public class EntryDao {
             }
 
             resultSet.close();
+            preparedStatement.close();
             CONNECTOR.connection.close();
 
             return entries;
