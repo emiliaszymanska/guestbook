@@ -1,18 +1,19 @@
 package org.example.model;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import org.example.helpers.CustomLocalDateTimeSerializer;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Entry {
 
     private String content;
+    @JsonSerialize(using = CustomLocalDateTimeSerializer.class)
     private LocalDateTime dateAndTime;
     private String authorName;
 
-    public Entry(String content, LocalDateTime dateAndTime, String authorName) {
-        this.content = content;
-        this.dateAndTime = dateAndTime;
-        this.authorName = authorName;
+    public Entry() {
     }
 
     public String getContent() {
